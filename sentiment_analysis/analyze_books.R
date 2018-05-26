@@ -14,13 +14,11 @@ library(ggplot2)
 # Use the get_sentiments() function to get your dictionary of positive
 # and negative words. Use the lexicon which categorizes words into
 # positive and negative.
-
-
-
+categories <- get_sentiments("bing")
 
 ##### DATA ANALYSIS + WRANGLING #####
 # Read books data in 
-
+data <- read.csv("data/austen_books.csv", stringsAsFactors = FALSE)
 
 
 
